@@ -19,7 +19,7 @@ operator = {
 	'!':math.factorial,
 	'F':Fraction,
 	'R':operator.add,
-#	'^':operator.pow
+	'^':operator.pow
 }
 def calculate(arg):
 	stack = list()

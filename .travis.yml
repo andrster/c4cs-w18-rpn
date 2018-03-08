@@ -1,9 +1,6 @@
 language: python
 python:
-- "3"
-- "3.2"
-- "3.5"
-install:
--pip install .
-script:
-	- make
+ - "3"
+ - "3.2"
+ - "3.5"
+script:  make

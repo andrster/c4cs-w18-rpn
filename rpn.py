@@ -41,16 +41,16 @@ def calculate(arg):
 				result = function(arg2)
 				stack.append(result)
 				print(result)
-		#	elif token == 'R':
-		#		function = operator[oldtoken]
-		#		if oldtoken == '!' or oldtoken == 'F':
-                #                	result = function(arg2)
-                #                	stack.append(result)
-                #                	print(result)
-		#		else:
-		#			arg1 = stack.pop()
-		#		result = function(arg1,arg2)
-		#			stack.append(result)
+			elif token == 'R':
+				function = operator[oldtoken]
+				if oldtoken == '!' or oldtoken == 'F':
+                                	result = function(arg2)
+                                	stack.append(result)
+                                	print(result)
+				else:
+					arg1 = stack.pop()
+					result = function(arg1,arg2)
+					stack.append(result)
 
 			else:
 				result = function(arg1,arg2)

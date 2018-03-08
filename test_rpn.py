@@ -29,9 +29,12 @@ class TestBasics(unittest.TestCase):
 	def test_factorial(self):
 		result = rpn.calculate('4 ! 3 +')
 		self.assertEqual(27,result)
-	#def test_factor(self):
-	#	result = rpn.calculate('.25 F')
-	#	self.assertEqual('1/4', str(result))
-	#def test_repeat(self):
-	#	result = rpn.calculate('2 3 2 + R')
-	#	self.assertEqual(7,result)
+	def test_factor(self):
+		result = rpn.calculate('.25 F')
+		self.assertEqual('1/4', str(result))
+	def test_repeat(self):
+		result = rpn.calculate('2 3 2 + R')
+		self.assertEqual(7,result)
+	def test_carret(self):
+		result = rpn.calculate(' 3 2 ^')
+		self.assertEqual(9,sesult)

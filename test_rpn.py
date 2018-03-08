@@ -37,4 +37,4 @@ class TestBasics(unittest.TestCase):
 		self.assertEqual(7,result)
 	def test_carret(self):
 		result = rpn.calculate(' 3 2 ^')
-		self.assertEqual(9,sesult)
+		self.assertEqual(9,result)

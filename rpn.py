@@ -15,11 +15,11 @@ operator = {
 	'-':operator.sub,
 	'*':operator.mul,
 	'/':operator.truediv,
-	'^':operator.pow,
+#	'^':operator.pow,
 	'!':math.factorial,
 	'F':Fraction,
 	'R':operator.add,
-	'^':operator.pow
+#	'^':operator.pow
 }
 def calculate(arg):
 	stack = list()
